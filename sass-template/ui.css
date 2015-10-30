@@ -1,0 +1,31 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+body { font-family: Noto Sans KR, sans-serif; font-size: 12px; font-family: sans-serif, sans-serif; }
+
+ul, li { list-style: none; }
+
+* { margin: 0; padding: 0; }
+
+.navi-01 ul { width: 100%; }
+.navi-01 ul li { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; float: left; width: 25%; text-align: center; background: #eee; }
+.navi-01 ul li:first-child .btn { background: none; }
+.navi-01 ul li .btn { background: url("line.png") left center no-repeat; background-size: 1px; font-size: 12px; display: block; text-align: center; padding: 9px 0; line-height: 1; }
+.navi-01 ul:after { display: block; clear: both; content: ""; }
+.navi-01 ul li .btn { font-weight: 100; }
+.navi-01 ul li .btn { text-decoration: none; color: #000; }
+.navi-01 ul li .btn:visited { text-decoration: none; color: #000; }
+.navi-01 ul li .btn:hover { text-decoration: none; color: #000; }
+
+.caution .list li { position: relative; padding-left: 20px; margin-top: 3px; }
+.caution .list li .num { position: absolute; left: 0; top: 0; }
+
+.contents .notice { border: 1px solid #eee; padding: 10px; }
+.contents .notice .tit { padding-bottom: 10px; border-bottom: 1px solid #ccc; }
+.contents .notice .con { margin-top: 10px; }
+
+.con-01 li { width: 100%; display: table; table-layout: fixed; margin-top: 5px; }
+.con-01 li:first-child { margin-top: 0; }
+.con-01 span { display: table-cell; vertical-align: top; }
+.con-01 span:first-child { width: 100px; }
+.con-01 span:last-child { padding-left: 5px; }
+
+/*# sourceMappingURL=ui.css.map */

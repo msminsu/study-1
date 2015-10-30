@@ -1,0 +1,17 @@
+$baseFontSize: 12px;
+
+@import "mixin";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body {
+	font-family: Noto Sans KR, sans-serif;
+	@include setFont($baseFontSize);
+}
+
+ul,li{ list-style:none;}
+
+*{
+	margin:0;
+	padding:0;
+}
+
