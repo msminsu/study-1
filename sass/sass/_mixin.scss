@@ -55,7 +55,7 @@
 	}
 }
 
-@mixin twoColumn($left:100px, $listMargin:5px){
+@mixin twoColumn($left:100px, $listMargin:5px) {
 	li{
 		width:100%;
 		display:table;
