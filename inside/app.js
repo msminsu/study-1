@@ -1,11 +1,9 @@
-var foo1 = new Object();
-var foo2 = {};
+function Foo() {
 
-function Moon() {
 }
 
-var foo3 = new Moon();
+var s = new Foo();
 
-console.log('1', foo1);
-console.log('2', foo2);
-console.log('3', foo3);
+s.prototype = {
+
+};
