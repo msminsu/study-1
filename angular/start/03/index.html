@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJs</title>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
+</head>
+<body ng-app>
+
+<p id="greeting"></p>
+<ul id="favorite"></ul>
+
+<hr/>
+
+<div class="mustache"></div>
+
+<hr/>
+
+<div class="angular" ng-init="person={name:'demoon',favorite:['사과', '딸기', '포도']}">
+	<h1>hello {{person.name}}</h1>
+	<ul>
+		<li ng-repeat="fruit in person.favorite">
+			<a href="#{{fruit}}">{{fruit}}</a>
+		</li>
+	</ul>
+
+</div>
+
+<script id="persontpl" type="text/template">
+	<h1>hello {{name}}</h1>	<h2>좋아하는 과일</h2>
+	<ul>
+		{{#favorite}}
+		<li><a href="#{{.}}">{{.}}</a></li>
+		{{/favorite}}
+	</ul>
+</script>
+</body>
+<script type="text/javascript" src="../../angular.min.js"></script>
+<script type="text/javascript" src="../../jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</html>

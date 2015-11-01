@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJs</title>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
+</head>
+<body ng-app="myApp">
+<div class="well" ng-controller="todoCtrl1">
+	<h1>{{appName}}</h1>
+	<p>전체 할 일 <strong>{{todoList.length}}</strong>개 / 남은 할일은 <strong>{{remain()}}</strong>개 [ <a href="" ng-click="archive()">보관하기</a> ]</p>
+	<ul class="list-unstyled">
+		<li class="checkbox" ng-repeat="todo in todoList">
+			<input type="checkbox" title="" ng-model="todo.done"/>{{todo.title}}
+		</li>
+	</ul>
+	<div class="form-group">
+		<label class="sr-only" for="newItemText">새로운 할 일</label>
+		<input type="text" class="form-control" id="newItemText" name="newItemText" placeholder="새로운 할 일"
+		       ng-model="newTitle"/>
+	</div>
+	<button type="submit" class="btn btn-default" ng-click="addNewTodo(newTitle)">추가</button>
+</div>
+</body>
+<script type="text/javascript" src="../../angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</html>
