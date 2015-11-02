@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJs</title>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
+</head>
+<body>
+
+<div ng-app="myApp" ng-controller="customerCtrl">
+	<div>고객목록
+		<ul>
+			<li ng-repeat="customer in customerList">
+				[{{$index+1}}] 고객이름: {{customer.name}}, 고객나이: {{customer.age}}
+			</li>
+		</ul>
+	</div>
+
+	<div>18미만 고객목록
+		<ul>
+			<li ng-repeat="youngCuster in youngCusterList">
+				[{{$index+1}}] 고객이름: {{youngCuster.name}}, 고객나이: {{youngCuster.age}}
+			</li>
+		</ul>
+	</div>
+</div>
+
+</body>
+<script type="text/javascript" src="../../angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</html>

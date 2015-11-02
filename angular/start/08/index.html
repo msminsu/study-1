@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJs</title>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
+</head>
+<body>
+
+<div ng-app="form" ng-controller="formCtrl">
+	<form name="sampleForm">
+
+
+		<p>이름: <input type="text" name="name" ng-model="name" mg-maxlength="3" ng-required="true"/>
+			<span class="error" ng-show="sampleForm.name.$error.required">필수입력</span></p>
+
+		<p>핸드폰 번호: <input type="text" name="tel"/></p>
+
+	</form>
+</div>
+
+</body>
+<script type="text/javascript" src="../../angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</html>

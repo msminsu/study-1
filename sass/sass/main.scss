@@ -1,5 +1,4 @@
 @import "reset";
-@import "component";
 
 .navi-01{
 	@include hList(4, $line:'line.png', $bg:#eee);
