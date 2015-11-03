@@ -9,13 +9,19 @@
 
 <div ng-app="form" ng-controller="formCtrl">
 	<form name="sampleForm">
-
-
 		<p>이름: <input type="text" name="name" ng-model="name" mg-maxlength="3" ng-required="true"/>
 			<span class="error" ng-show="sampleForm.name.$error.required">필수입력</span></p>
 
-		<p>핸드폰 번호: <input type="text" name="tel"/></p>
+		<p>핸드폰 번호: <input type="text" name="tel" ng-model="tel" ng-pattern="/^\d{3}-\d{3,4}-\d{4}$/"/>
+		<span class="error" ng-show="sampleForm.tel.$error.pattern">000-0000-0000</span></p>
 
+		<p>사용자 정보: {{name}}/{{tel}}</p>
+		<p>smapleForm.name.$valid = {{sampleForm.name.$valid}}</p>
+		<p>smapleForm.name.$error = {{sampleForm.name.$error}}</p>
+		<p>smapleForm.tel.$valid = {{sampleForm.tel.$valid}}</p>
+		<p>smapleForm.tel.$error = {{sampleForm.tel.$error}}</p>
+		<p>smapleForm.$valid = {{sampleForm.$valid}}</p>
+		<p>smapleForm.$error.required = {{sampleForm.$error.required}}</p>
 	</form>
 </div>
 
