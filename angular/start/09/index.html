@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJs</title>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
+</head>
+<body>
+<div ng-app="form" >
+	<div ng-controller="formCtrl">
+		<form name="sampleForm">
+			<p>선택1: <input type="checkbox" name="check1" ng-model="value1"/></p>
+			<p>선택2: <input type="checkbox" name="check2" ng-model="value2" ng-true-value="'good'" ng-false-value="'bad'"/></p>
+			<p>선택된 1의 바인된 값: {{value1}}</p>
+			<p>선택된 2의 바인된 값: {{value2}}</p>
+		</form>
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="../../angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</html>
