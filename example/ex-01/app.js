@@ -1,6 +1,5 @@
 (function ($) {
 	$('.spin-box').each(function () {
-
 		var obj = $(this),
 			btnMinus = obj.find('.btn-minus'),
 			btnPlus = obj.find('.btn-plus'),
